@@ -22,6 +22,6 @@ RUN pip install pandas
 RUN pip install jinja2
 RUN pip install ipython
 
-EXPOSE 8888
+EXPOSE 80
 
-CMD ipython notebook --pylab=inline --ip=* --MappingKernelManager.time_to_dead=10 --MappingKernelManager.first_beat=3
+CMD ipython notebook --pylab=inline --ip=* --port=80 --MappingKernelManager.time_to_dead=10 --MappingKernelManager.first_beat=3
